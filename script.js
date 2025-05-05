@@ -14,8 +14,8 @@ class Person {
 
 class Student extends Person {
 
-	constructor(){
-		super("rah",13)
+	constructor(name,age){
+		super(name,age)
 		
 	}
 	study(){
@@ -26,8 +26,8 @@ class Student extends Person {
 
 class Teacher extends Person {
 
-			constructor(){
-		super("silkant",67)
+			constructor(name,age){
+		super(name,age)
 	}
 
 	teach(){
@@ -35,13 +35,16 @@ class Teacher extends Person {
 	}
 }
 
-const student = new Student();
-student.study(); // Output: Rah is studying
+cont pers = new Person("john",25)
+console.log(pers.getName())
+pers.setAge(30)
+console.log(pers.age)
 
-const teacher = new Teacher();
-teacher.teach(); 
+let std = new Student("alice",22)
+std.stud()
 
-
+let teaches  = new Teacher("bob",40)
+	teaches.teach()
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
