@@ -19,7 +19,7 @@ class Student extends Person {
 		
 	}
 	study(){
-		console.log(this.name +" is studing")
+		console.log(this.name + " is studying");
 	}
 	
 }
@@ -35,15 +35,15 @@ class Teacher extends Person {
 	}
 }
 
-const pers = new Person("john",25)
+const pers = new Person("John",25)
 console.log(pers.getName())
 pers.setAge(30)
 console.log(pers.age)
 
-let std = new Student("alice",22)
+let std = new Student("Alice",22)
 std.study()
 
-let teaches  = new Teacher("bob",40)
+let teaches  = new Teacher("Bob",40)
 	teaches.teach()
 // Do not change the code below this line
 window.Person = Person;
