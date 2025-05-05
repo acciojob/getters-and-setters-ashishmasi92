@@ -19,23 +19,27 @@ class Student extends Person {
 		
 	}
 	study(){
-		console.log(this.name +"is studing")
+		console.log(this.name +" is studing")
 	}
 	
 }
 
 class Teacher extends Person {
 
-	contructor(){
+			constructor(){
 		super("silkant",67)
 	}
 
 	teach(){
-		console.log(this.name+is teaching)
+		console.log(this.name+" is teaching")
 	}
 }
 
+const student = new Student();
+student.study(); // Output: Rah is studying
 
+const teacher = new Teacher();
+teacher.teach(); 
 
 
 // Do not change the code below this line
