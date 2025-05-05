@@ -35,13 +35,13 @@ class Teacher extends Person {
 	}
 }
 
-cont pers = new Person("john",25)
+const pers = new Person("john",25)
 console.log(pers.getName())
 pers.setAge(30)
 console.log(pers.age)
 
 let std = new Student("alice",22)
-std.stud()
+std.study()
 
 let teaches  = new Teacher("bob",40)
 	teaches.teach()
